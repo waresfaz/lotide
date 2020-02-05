@@ -18,6 +18,13 @@ const assertArraysEqual = function(firstArray, secondArray) {
   }
 };
 
-console.log(assertArraysEqual([1, 2, 3], [1, 2, 3]));
-console.log(assertArraysEqual([1, 2, 3], [1, 2, 7]));
-console.log(assertArraysEqual([1, 2, 3], [1, 2, 3, 4]));
+const middle = function(array) {
+  let arrayMiddle = [];
+  for (i = 0; i <= array.length, i++) {
+    if (array.length <= 1) {
+      return arrayMiddle;
+    } else if (array.length % 2 !== 0) {
+      return arrayMiddle =+ Math.floor(array.[i])
+    }
+  }
+}
