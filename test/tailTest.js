@@ -1,12 +1,13 @@
+const assert = require('chai').assert;
+
 const assertEqual = require('../assertEqual');
 const tail = require('../tail');
 
-console.log(tail([5, 6, 7], [5, 6, 7]));
+describe("#tail", () => {
 
-assertEqual([0, 1, 2, 3], [0, 1, 2, 3]);
-assertEqual('true', 'true');
+  it("returns same array without the first element", () => {
+    assert.deepEqual(tail([5, 6, 7]), [6, 7]);
+  });
 
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); // no need to capture the return value since we are not checking it
-assertEqual(words.length, 3); // original array should still have 3 elements!
-console.log(tail(words));
+});
+
