@@ -1,7 +1,7 @@
 {
   "name": "lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "various functions in lotide, stored in index.js",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -19,7 +19,7 @@
     "type": "git",
     "url": "git+https://github.com/waresfaz/lotide.git"
   },
-  "author": "",
+  "author": "@waresfaz",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/waresfaz/lotide/issues"
