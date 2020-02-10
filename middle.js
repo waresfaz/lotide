@@ -24,7 +24,7 @@ const middle = function(array) {
   } else if (array.length % 2 !== 0) {
     return midIndex = array[Math.floor(array.length / 2)];
   } else if (array.length % 2 === 0) {
-    return [midIndex, (midIndex - 1)];
+    return [midIndex, (midIndex + 1)];
   }
 } 
 
