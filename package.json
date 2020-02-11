@@ -1,5 +1,5 @@
 {
-  "name": "lotide",
+  "name": "@waresfaz/lotide",
   "version": "1.0.0",
   "description": "various functions in lotide, stored in index.js",
   "main": "assertArraysEqual.js",
