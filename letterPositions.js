@@ -18,12 +18,20 @@ const assertArraysEqual = function(firstArray, secondArray) {
   }
 };
 
+
 const letterPositions = function(sentence) {
   const results = {};
-  for (let i = 0; i < sentence.length)
+  for (let position in sentence) {
+    var letter = sentence[position];
+    if(results[letter] && letter !== " "){
+      results[letter].push(position);
+    } else {
+      results[letter] = [position];
+    }
+  }
   return results;
 };
 
 
-
-assertArraysEqual(letterPositions("hello").e, [1]);
+// assertArraysEqual(letterPositions("hello").e, [1]);
+// console.log(letterPositions("exmaple text"));
